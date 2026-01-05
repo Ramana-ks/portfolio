@@ -982,7 +982,7 @@ justify-content:space-evenly;
 @media (max-width: 768px) {
     /* Stack Education Columns */
     .education-dashboard {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1.3fr;
         padding: 10px;
     }
 
