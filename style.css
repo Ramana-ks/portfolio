@@ -983,6 +983,7 @@ justify-content:space-evenly;
     /* Stack Education Columns */
     .education-dashboard {
         grid-template-columns: 1fr;
+        padding: 10px;
     }
 
     /* Stack Achievement Items */
@@ -1137,7 +1138,7 @@ footer {
         width: 100%;
         max-width: 300px;
         text-align: center;
-        margin-left: 30px;
+        
     }
     
     .nav-links { 
