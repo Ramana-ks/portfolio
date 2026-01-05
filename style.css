@@ -445,6 +445,7 @@ nav.visible {
     transform: translateY(0);
 }
 
+
 .section-title {
     margin-top:100px;
     font-size: 3rem;
@@ -613,15 +614,20 @@ nav.visible {
    PROJECTS
    ======================================== */
    .projects-grid {
-    display: grid;
-    grid-template-columns:400px 400px 400px;
-    gap: 1rem;
+display: flex;
+flex-direction:row;
+justify-content:space-evenly;
 
 }
+
+
+
+
 
 .project-card {
     perspective:400px;
     height: 300px;
+    width: 400px;
 }
 
 .card-inner {
@@ -1131,6 +1137,7 @@ footer {
         width: 100%;
         max-width: 300px;
         text-align: center;
+        margin-left: 30px;
     }
     
     .nav-links { 
@@ -1280,9 +1287,11 @@ footer {
   }
   /* 1. Grid becomes single column */
   .projects-grid {
-    grid-template-columns: 1fr; /* Stack cards vertically */
-    gap: 30px;
-    padding:50px; /* Add slight side padding */
+display: flex;
+    flex-direction:column;
+    padding:50px;
+
+ 
   }
 
   /* 2. Container for the 3D effect */
@@ -1292,6 +1301,8 @@ footer {
     height: 250px; /* Fixed height is REQUIRED for absolute positioning flip */
     perspective: 1000px; /* Re-enable 3D depth */
     margin: 0 auto;
+    margin-top: 30px;
+
   }
 
   /* 3. The Inner Container (The moving part) */
